@@ -1,0 +1,27 @@
+img {
+    max-width: 60%; /* Asegura que no excedan el ancho de su contenedor */
+    height: auto;    /* Mantiene la proporción */
+  }
+
+  .social-icons {
+    display: flex; /* Para alinear los iconos horizontalmente /
+    align-items: center; / Para alinear verticalmente los iconos (opcional) /
+    justify-content: center; / Para centrar los iconos horizontalmente (opcional) */
+    }
+    
+    .social-icon {
+    width: 30px;    /* Establece el ancho deseado (ajusta este valor) /
+    height: auto;    / Mantiene la proporción de aspecto /
+    margin-right: 10px; / Añade un pequeño espacio entre los iconos (ajusta este valor) */
+    }
+    
+    /* Opcional: para quitar el margen del último icono */
+    .social-icons a:last-child .social-icon {
+    margin-right: 0;
+    }
+    .logo-img {
+        width: 200px; /* Ajusta este valor al ancho deseado */
+        height: auto; /* Mantiene la proporción de aspecto */
+        /* Si quieres una altura específica, puedes usar: */
+        /* height: 100px; */
+      }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Aporte - ECO Culiacán</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/"><img src="/images/logo.png" alt="Logo ECO Culiacán"><span>Culiacán</span></a>
+        </div>
+        <div class="header-buttons">
+            <button class="secondary-btn">No deseo donar</button>
+        </div>
+    </header>
+
+    <main class="donation-container">
+        <h2>¡Tu aporte es importante para nosotros!</h2>
+        <div class="credit-card-preview">
+            <img src="/images/credit_card.png" alt="Tarjeta de crédito">
+        </div>
+        <form action="/donar" method="POST">
+            <div class="form-group">
+                <label for="tarjeta">Número de Tarjeta</label>
+                <div class="input-icon">
+                    <img src="/images/card_icon.png" alt="Icono de tarjeta">
+                    <input type="text" id="tarjeta" name="tarjeta" placeholder="Tarjeta">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="nombre_titular">Nombre del Titular</label>
+                <div class="input-icon">
+                    <img src="/images/user_icon_small.png" alt="Icono de usuario">
+                    <input type="text" id="nombre_titular" name="nombre_titular" placeholder="Nombre">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="fecha_vencimiento">Fecha de Vencimiento</label>
+                    <div class="input-icon">
+                        <img src="/images/calendar_icon.png" alt="Icono de calendario">
+                        <input type="text" id="fecha_vencimiento" name="fecha_vencimiento" placeholder="MM/AA">
+                    </div>
+                </div>
+                <div class="form-group cvv-group">
+                    <label for="cvv">CVV</label>
+                    <div class="input-icon">
+                        <img src="/images/lock_icon.png" alt="Icono de candado">
+                        <input type="text" id="cvv" name="cvv" placeholder="CVV">
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="primary-btn">Aceptar</button>
+        </form>
+        <div class="paypal-button">
+            <img src="/images/paypal_button.png" alt="Botón de PayPal">
+        </div>
+    </main>
+
+    <footer>
+        <p>Menos basura, más futuro</p>
+        <p><a href="https://ecogreen.com.mx/" target="_blank">ecogreen.com.mx</a></p>
+        <div class="social-icons">
+            <a href="#"><img src="/images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="/images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="/images/ig.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

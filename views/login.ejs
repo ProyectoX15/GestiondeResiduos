@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - ECO Culiacán</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/"><img src="/images/ECO.png" alt="Logo ECO Culiacán" class="logo-img"><span>Culiacán</span></a>
+        </div>
+        <div class="header-buttons">
+            <a href="/registro" class="register-btn">Registrarme</a>
+        </div>
+    </header>
+
+    <main class="login-container">
+        <div class="user-icon">
+            <img src="/images/usuario.png" alt="Icono de usuario">
+        </div>
+        <h1>Iniciar Sesión</h1>
+        <form action="/login" method="POST">
+            <div class="form-group">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Ej. AntonioLopez">
+            </div>
+            <div class="form-group">
+                <label for="contrasena">Contraseña</label>
+                <input type="password" id="contrasena" name="contrasena" placeholder="Ej. **********">
+            </div>
+            <button type="submit" class="main-action-btn">Iniciar Sesión</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Menos basura, más futuro</p>
+        <p><a href="https://ECOCuliacan.com.mx/" target="_blank">ECOCuliacan.com.mx</a></p>
+        <div class="social-icons">
+            <a href="#"><img src="/images/facebook.png" alt="Facebook" class="social-icon"></a>
+            <a href="#"><img src="/images/twitter.png" alt="Twitter" class="social-icon"></a>
+            <a href="#"><img src="/images/ig.png" alt="Instagram" class="social-icon"></a>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
