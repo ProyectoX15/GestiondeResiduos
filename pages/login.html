@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Iniciar Sesión - Eco Culiacán</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/public/CSS/style.css" />
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header.encabezado {
+            background-color: #fff;
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header.encabezado .logo {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .contenedor-principal-centrado {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        main.contenedor-login {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        main.contenedor-login h1 {
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+
+        main.contenedor-login .formulario label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        main.contenedor-login .formulario input[type="text"],
+        main.contenedor-login .formulario input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+        }
+
+        main.contenedor-login .formulario button.btn-iniciar {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        footer.pie {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+
+        footer.pie a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer.pie .redes {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        footer.pie .redes a {
+            margin: 0 10px;
+        }
+
+        footer.pie .redes img.social-icon {
+            width: 30px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<header class="encabezado">
+    <img src="/public/images/ECO.png" alt="Logo Eco Culiacán" class="logo"/>
+    <button class="btn-registrarme">Registrarme</button>
+</header>
+
+    <div class="contenedor-principal-centrado">
+        <main class="contenedor-login">
+
+
+            <h1>Iniciar Sesión</h1>
+
+            <form class="formulario">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" placeholder="Ej. AntonioLopez"/>
+
+                <label for="contrasena">Contraseña</label>
+                <input type="password" id="contrasena" placeholder="Ej. AntonioLopez@gmail.com"/>
+
+                <button type="submit" class="btn-iniciar">Iniciar Sesión</button>
+            </form>
+        </main>
+    </div>
+
+    <footer class="pie">
+        <p><em>Menos basura, más futuro</em></p>
+        <a href="https://ECOCuliacan.com.mx" target="_blank">ecogreen.com.mx</a>
+        <div class="redes">
+            <a href="#"><img src="/public/images/facebook.png" alt="Facebook" class="social-icon" style="width: 30px; height: auto;"></a>
+            <a href="#"><img src="/public/images/twitter.png" alt="Twitter" class="social-icon" style="width: 30px; height: auto;"></a>
+            <a href="#"><img src="/public/images/ig.png" alt="Instagram" class="social-icon" style="width: 30px; height: auto;"></a>
+        </div>
+    </footer>
+
+</body>
+</html>
