@@ -9,6 +9,7 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false })); // Para procesar formularios codificados en la URL
 app.use(express.json()); // Para procesar datos JSON en las peticiones
 
+/*
 app.get('/login', (req, res) => {
   res.render('login');
 });
@@ -59,9 +60,9 @@ app.post('/seleccion-zona', (req, res) => {
 app.get('/reporte-creado', (req, res) => {
   res.render('reporte_creado'); // Asegúrate de que el archivo se llama reporte_creado.ejs
 });
-
+*/
 //Routes
-//app.use('/', require('./routes/index')); aun no en uso!
+app.use('/', require('./routes/index'));
 
 app.listen(port, () => {
   console.log(`Servidor corriendo en http://localhost:${port}`);
