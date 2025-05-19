@@ -1,27 +1,252 @@
-img {
-    max-width: 60%; /* Asegura que no excedan el ancho de su contenedor */
-    height: auto;    /* Mantiene la proporción */
-  }
+/* Estilos Generales (aplican a todos los tamaños de pantalla) */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Cambié el fondo a blanco */
+    color: #000000;       /* Cambié el color del texto a negro */
+}
 
-  .social-icons {
-    display: flex; /* Para alinear los iconos horizontalmente /
-    align-items: center; / Para alinear verticalmente los iconos (opcional) /
-    justify-content: center; / Para centrar los iconos horizontalmente (opcional) */
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.primary-btn, .secondary-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.primary-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.secondary-btn {
+    background-color: #f8f9fa;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+/* Estilos del Header */
+header {
+    background-color: #fff;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 150px; /* Tamaño del logo en escritorio */
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 1.2em;
+    color: #28a745;
+}
+
+.header-buttons a {
+    margin-left: 15px;
+}
+
+/* Estilos del Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px; /* Tamaño de los iconos sociales */
+    height: auto;
+}
+
+/* Estilos específicos de la página de Registro */
+.register-container {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+}
+
+.terms input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Media Queries para diferentes tamaños de pantalla */
+
+/* Pantallas más pequeñas (móviles y tablets pequeñas - hasta 768px de ancho) */
+@media screen and (max-width: 768px) {
+    img {
+        max-width: 100%;
     }
-    
+
+    .logo img {
+        max-width: 120px; /* Tamaño del logo en tablets y móviles */
+    }
+
     .social-icon {
-    width: 30px;    /* Establece el ancho deseado (ajusta este valor) /
-    height: auto;    / Mantiene la proporción de aspecto /
-    margin-right: 10px; / Añade un pequeño espacio entre los iconos (ajusta este valor) */
+        width: 25px;
+        margin-right: 8px;
     }
-    
-    /* Opcional: para quitar el margen del último icono */
-    .social-icons a:last-child .social-icon {
-    margin-right: 0;
+}
+
+/* Pantallas aún más pequeñas (móviles - hasta 480px de ancho) */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.7em;
     }
-    .logo-img {
-        width: 200px; /* Ajusta este valor al ancho deseado */
-        height: auto; /* Mantiene la proporción de aspecto */
-        /* Si quieres una altura específica, puedes usar: */
-        /* height: 100px; */
-      }
+
+    .logo img {
+        max-width: 100px; /* Tamaño del logo en móviles pequeños */
+    }
+
+    .social-icon {
+        width: 20px;
+        margin-right: 5px;
+    }
+}
+
+/* Estilos específicos para otras páginas */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero .main-action-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.ecofactura-image {
+    max-width: 80%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos específicos para la página de inicio de sesión */
+.avatar-img {
+    max-width: 100px; /* Tamaño del avatar */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el botón "Registrarme" en la página principal */
+.btn-registrarme {
+    background-color: #aabf40 !important; /* Verde que solicitaste */
+    color: white !important;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1em;
+    margin-left: 10px; /* Espacio entre los botones */
+}
+
+.btn-registrarme:hover {
+    background-color: #8c9c32 !important;
+}
+
+/* Estilos para el botón "Iniciar Sesión" en la página principal */
+.btn-iniciar-sesion {
+    background-color: #588f3d !important; /* Otro tono de verde */
+    color: black !important;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1em;
+    margin-left: 10px; /* Espacio entre los botones */
+}
+
+.btn-iniciar-sesion:hover {
+    background-color: #436e2d !important;
+}
