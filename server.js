@@ -60,6 +60,9 @@ app.get('/reporte-creado', (req, res) => {
   res.render('reporte_creado'); // Asegúrate de que el archivo se llama reporte_creado.ejs
 });
 
+//Routes
+//app.use('/', require('./routes/index')); aun no en uso!
+
 app.listen(port, () => {
   console.log(`Servidor corriendo en http://localhost:${port}`);
 });
